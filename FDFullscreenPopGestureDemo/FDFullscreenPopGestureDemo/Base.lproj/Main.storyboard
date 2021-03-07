@@ -92,10 +92,10 @@
             </objects>
             <point key="canvasLocation" x="591" y="-13"/>
         </scene>
-        <!--View Controller-->
+        <!--BaseVC-->
         <scene sceneID="BJu-Yl-eEl">
             <objects>
-                <viewController id="Vt4-da-upi" sceneMemberID="viewController">
+                <viewController id="Vt4-da-upi" customClass="BaseVC" customModule="FDFullscreenPopGestureDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="NeC-O8-9Iu"/>
                         <viewControllerLayoutGuide type="bottom" id="PtH-Yf-9Du"/>
@@ -133,8 +133,8 @@
                     <navigationItem key="navigationItem" id="6dx-PQ-flm"/>
                     <nil key="simulatedTopBarMetrics"/>
                     <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="boolean" keyPath="fd_prefersNavigationBarHidden" value="YES"/>
-                        <userDefinedRuntimeAttribute type="number" keyPath="fd_interactivePopMaxAllowedInitialDistanceToLeftEdge">
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="prefersNavigationBarHidden" value="YES"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="interactivePopMaxAllowedInitialDistanceToLeftEdge">
                             <integer key="value" value="200"/>
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
@@ -146,7 +146,7 @@
         <!--ScrollView-->
         <scene sceneID="f6H-g5-9T2">
             <objects>
-                <viewController id="qED-Rc-Scn" sceneMemberID="viewController">
+                <viewController id="qED-Rc-Scn" customClass="BaseVC" customModule="FDFullscreenPopGestureDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Q8Y-cg-RUs"/>
                         <viewControllerLayoutGuide type="bottom" id="pla-hK-lwP"/>
@@ -202,7 +202,7 @@
         <!--forkingdog-->
         <scene sceneID="cOT-kB-lLH">
             <objects>
-                <viewController id="2Pl-9I-t69" sceneMemberID="viewController">
+                <viewController id="2Pl-9I-t69" customClass="BaseVC" customModule="FDFullscreenPopGestureDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="hWm-u3-DOA"/>
                         <viewControllerLayoutGuide type="bottom" id="q6B-q3-x9F"/>
@@ -239,10 +239,10 @@
             </objects>
             <point key="canvasLocation" x="2478.2608695652175" y="-12.723214285714285"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Base Nav Con-->
         <scene sceneID="pyQ-ib-aCd">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="igB-ae-A6d" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="igB-ae-A6d" customClass="BaseNavCon" customModule="FDFullscreenPopGestureDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="xNk-zc-iuF">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -259,7 +259,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="amI-c6-vgq"/>
+        <segue reference="rTt-jg-esi"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="forkingdog" width="128" height="128"/>

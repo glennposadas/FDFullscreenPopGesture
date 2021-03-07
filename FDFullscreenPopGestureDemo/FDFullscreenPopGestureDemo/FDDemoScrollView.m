@@ -6,13 +6,14 @@
 //  Copyright © 2016年 forkingdog. All rights reserved.
 //
 
+#import "FDFullscreenPopGestureDemo-Swift.h"
 #import "FDDemoScrollView.h"
 
 @implementation FDDemoScrollView
 
 - (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer {
     if (self.contentOffset.x <= 0) {
-        if ([otherGestureRecognizer.delegate isKindOfClass:NSClassFromString(@"_FDFullscreenPopGestureRecognizerDelegate")]) {
+        if ([otherGestureRecognizer.delegate isKindOfClass:[FullscreenPopGestureRecognizerDelegate class]]) {
             return YES;
         }
     }
